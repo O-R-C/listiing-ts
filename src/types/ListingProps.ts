@@ -1,7 +1,7 @@
 import ItemProps from './ItemProps'
 
 export type ListingProps = {
-  items?: Array<ItemProps>
+  items?: ItemProps[]
 }
 
 export default ListingProps

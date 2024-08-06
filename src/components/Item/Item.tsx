@@ -3,7 +3,9 @@ import getFormattedDescription from './getFormattedDescription'
 import ItemProps from '../../types/ItemProps'
 import styles from './Item.module.css'
 
-const Item = ({ url, title, price, currency_code, quantity, MainImage }: ItemProps) => {
+const Item = ({ item }: { item: ItemProps }) => {
+  const { url, title, price, currency_code, quantity, MainImage } = item
+
   return (
     <div className={styles.item}>
       <div className={styles['item-image']}>

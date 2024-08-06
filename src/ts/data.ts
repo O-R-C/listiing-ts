@@ -1,7 +1,7 @@
 import data from '../data/etsy.json'
 import ItemProps from '../types/ItemProps'
 
-export const etsyData: Array<ItemProps> = data
+export const etsyData: ItemProps[] = data
   .filter((item): boolean => item.state === 'active')
   .map((item): ItemProps => {
     return {

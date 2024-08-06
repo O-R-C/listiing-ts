@@ -8,7 +8,7 @@ const Listing = ({ items = [] }: ListingProps) => {
       {items.map((item) => (
         <Item
           key={item.listing_id}
-          {...item}
+          item={item}
         />
       ))}
     </div>
